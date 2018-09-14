@@ -43,10 +43,8 @@ export const UNIT_TESTS = () =>  {
        console.log("PASS");
    }
 
-   //mixed negative and letters
-   if(extractDigits("--3") == "12"){
+   //invalid input
+   if(extractDigits("--3") == ""){
        console.log("PASS");
    }
-
-
 }

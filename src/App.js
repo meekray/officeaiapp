@@ -13,7 +13,7 @@ class App extends Component {
   updateOutput = output => event => {
     var _newVal = extractDigits(event.target.value);
     this.setState({
-      error: _newVal == "" ? true : false,
+      error: _newVal == "" || isNaN(_newVal) ? true : false,
       output: _newVal,
     });
   };

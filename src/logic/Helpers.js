@@ -21,7 +21,7 @@ export const extractDigits = (input) => {
 
         ++index;
     }
-    return _totalSum || _containsNum ? _totalSum : "";
+    return _totalSum >= 0 && _containsNum ? _totalSum : "";
 }
 
 const _isNumber = (c) => {
